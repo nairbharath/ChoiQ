@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from '/public/cover.png'
+import signin from '/public/signin-rick.png'
+import aliensignin from '/public/alien-signin.png'
+
 import { BarsArrowDownIcon, BeakerIcon,
    
    
@@ -11,6 +14,7 @@ import { BarsArrowDownIcon, BeakerIcon,
      MagnifyingGlassCircleIcon,
       MagnifyingGlassIcon,
       MegaphoneIcon,
+      UserCircleIcon,
       
       
       
@@ -57,6 +61,18 @@ function Header() {
         </div>
         <div className='ml-5 flex items-center lg:hidden'>
           <BarsArrowDownIcon className='icon'/>
+        </div>
+
+        {/*Sign in / Sign Out Button*/}
+        <div className='text-gray-500 hidden lg:flex items-center space-x-2 border border-gray-100 p-1 cursor-pointer'>
+        <div className='text-gray-500 relative h-6 w-6 flex-shrink-0'>
+          <Image 
+          objectFit="contain" 
+          src={aliensignin} 
+          layout='fill'
+          alt=''/>
+        </div>
+        <p className='text-gray-500'>Sign In</p>
         </div>
 
     </div>
