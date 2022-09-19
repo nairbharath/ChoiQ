@@ -1,8 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from '/public/cover.png'
-import { BeakerIcon, ChevronDownIcon, HomeIcon, MagnifyingGlassCircleIcon, MagnifyingGlassIcon } from '@heroicons/react/24/solid'
-import { StarIcon } from '@heroicons/react/24/outline'
+import { BarsArrowDownIcon, BeakerIcon,
+   
+   
+   ChevronDownIcon,
+    GlobeAltIcon,
+    GlobeAsiaAustraliaIcon,
+    HomeIcon,
+     MagnifyingGlassCircleIcon,
+      MagnifyingGlassIcon,
+      MegaphoneIcon,
+      
+      
+      
+     } from '@heroicons/react/24/solid'
+     import { BellAlertIcon, ChatBubbleLeftRightIcon, PlusCircleIcon, SparklesIcon, VideoCameraIcon } from '@heroicons/react/24/outline'
 
 
 
@@ -31,6 +44,20 @@ function Header() {
           type="text" placeholder="Search your queries" />
           <button type="submit" hidden></button>
         </form>
+
+        <div className='text-gray-700 items-space-x-2 items-center mx-5 hidden lg:inline-flex'>
+          <SparklesIcon className='icon' />
+          <GlobeAltIcon className='icon'/>
+          <VideoCameraIcon className='icon'/>
+          <hr className='h-10 border border-gray-100' />
+          <ChatBubbleLeftRightIcon className='icon'/>
+          <BellAlertIcon className='icon'/>
+          <PlusCircleIcon className='icon'/>
+          <MegaphoneIcon className='icon'/>
+        </div>
+        <div className='ml-5 flex items-center lg:hidden'>
+          <BarsArrowDownIcon className='icon'/>
+        </div>
 
     </div>
   )
